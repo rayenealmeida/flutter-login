@@ -78,12 +78,12 @@ class _MyHomePageState extends State<MyHomePage>{
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                /*SizedBox(
+                SizedBox(
                   height: 155.0,
                 child: Image.asset("images/panda.jpg",
                 fit: BoxFit.contain,
                 ),
-                ),*/
+                ),
                 const SizedBox(
                   height: 45.0),
                   emailField,
