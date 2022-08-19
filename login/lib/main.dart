@@ -7,13 +7,11 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
 
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
       theme:ThemeData(
         primarySwatch: Colors.brown,
 
@@ -94,13 +92,10 @@ class _MyHomePageState extends State<MyHomePage>{
                   height: 35.0),
                   loginButton,
               ],
-           
             )
-            ),
+          ),
         ),
-        
-
-        ),
+      ),
     );
   }
 }
