@@ -52,7 +52,7 @@ class _MyHomePageState extends State<MyHomePage>{
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(32.0)),
       ),
     );
-    final loginButton = Material(
+      final loginButton = Material(
       elevation: 5.0,
       borderRadius: BorderRadius.circular(30.0),
       color: const Color.fromARGB(255, 211, 189, 181),
@@ -64,7 +64,21 @@ class _MyHomePageState extends State<MyHomePage>{
         textAlign: TextAlign.center,
         style: style.copyWith(color: Colors.white, fontWeight: FontWeight.bold),
        ),
-      )
+      ),
+      );
+    final CadastroButton = Material(
+      elevation: 5.0,
+      borderRadius: BorderRadius.circular(30.0),
+      color: const Color.fromARGB(255, 211, 189, 181),
+      child: MaterialButton(
+        minWidth: MediaQuery.of(context).size.width,
+        padding: const EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
+        onPressed: (){},
+        child: Text("Cadastrar",
+        textAlign: TextAlign.center,
+        style: style.copyWith(color: Colors.white, fontWeight: FontWeight.bold),
+       ),
+      ),
     );
     return Scaffold(
       body: SingleChildScrollView(
@@ -91,6 +105,9 @@ class _MyHomePageState extends State<MyHomePage>{
                   const SizedBox(
                   height: 35.0),
                   loginButton,
+                  const SizedBox(
+                  height: 20.0),
+                  CadastroButton,
               ],
             )
           ),
